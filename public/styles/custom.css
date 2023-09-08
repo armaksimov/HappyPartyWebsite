@@ -80,6 +80,89 @@ header {
     }
 }
 
+/*Working on the services section now*/
+#services .container-fluid {
+    background-color: #fff; 
+    transform-style: preserve-3d;
+}
+
+@media (width < 768px) {
+    #services .sect-head {
+        margin-bottom: 2.5rem;
+    } 
+}
+
+@media (min-width: 768px) {
+    #services .sect-head {
+        margin-bottom: -5rem;
+    } 
+
+    #services .sect-body {
+        margin-top: -5rem;
+    }
+}
+
+#services .container-fluid .box{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+#services .container-fluid .box .boxbody{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1.5s ease;
+}
+
+#services .container-fluid .box .boxbody .imgContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+#services .container-fluid .box .boxbody .imgContainer img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#services .container-fluid .box .boxbody .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f3e1d5;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+#services .container-fluid .box:hover .boxbody{
+    transform: rotateY(180deg);
+}
+
+#services .container-fluid .box .boxbody .content div{
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, #f3e1d5,#dc5943);
+    transform: translateZ(100px);
+}
+
 /*Working with the footer here*/
 #footer {
     background-color: #f3e1d5;
