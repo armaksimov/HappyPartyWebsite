@@ -1,4 +1,21 @@
-/*Working on the navigation bar*/
+/* Globally applicable adjustment for the screen size */
+@media (width < 768px) {
+    .sect-head {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .sect-head {
+        margin-bottom: -5rem;
+    } 
+
+    .sect-body {
+        margin-top: -5rem;
+    }
+}
+
+/* Working on the navigation bar */
 #navigation {
     background-color: #f3e1d5; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -86,22 +103,6 @@ header {
     transform-style: preserve-3d;
 }
 
-@media (width < 768px) {
-    #services .sect-head {
-        margin-bottom: 2.5rem;
-    } 
-}
-
-@media (min-width: 768px) {
-    #services .sect-head {
-        margin-bottom: -5rem;
-    } 
-
-    #services .sect-body {
-        margin-top: -5rem;
-    }
-}
-
 #services .container-fluid .box{
     position: relative;
     width: 350px;
@@ -163,7 +164,30 @@ header {
     transform: translateZ(100px);
 }
 
+/*Modifying the Packages Section here*/
+#packages .container-fluid {
+    background-color: #fff;
+}
+#packages .card {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    margin: 30px;
+}
+#packages .card-title {
+    color: #ce76c2;
+}
+#packages .card-subtitle {
+    color: #ce76c2;
+}
+#packages .hover-shadow:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+}
+
 /*Working with the footer here*/
 #footer {
     background-color: #f3e1d5;
+}
+#footer .socials:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
 }
