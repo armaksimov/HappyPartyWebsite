@@ -10,9 +10,11 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!--Linking bootstrap here-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="styles/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/scripts.js"></script>
 
     <link href="styles/custom.css" rel="stylesheet">
 </head>
@@ -20,7 +22,7 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top mw-100" id="navigation">
         <div class="container">
-            <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="images/burger.png" style="width: 25px; height: 25px;" class="navbar-toggler-icon">
             </button>
 
@@ -29,7 +31,7 @@
                     class="img-fluid ms-auto mw-25 mw-sm-50 mw-md-75 mw-lg-100">
             </a>
 
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav text-uppercase ms-auto py-5 py-lg-0" style="font-weight: bolder;">
                     <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
@@ -212,6 +214,182 @@
         </div>
     </section>
 
+    <section id="faq">
+        <div class='container-fluid d-flex flex-wrap w-100 min-vh-100 py-5 justify-content-center align-items-center'>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-12 mb-5">
+                    <div class="text-center">
+                        <p class="gliker h1 text-center text-break" style="color: #ce76c2;">Frequently Asked Questions</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-10 col-lg-8 col-xl-8 col-xxl-6 justify-content-center text-center mb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center mb-5">
+                            <ul class="nav nav-pills nav-fill gap-2 p-1 large bg-white rounded-5 shadow-sm" id="pillNav2" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active rounded-5 gliker" id="policies-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" onclick="displayFAQ(1)">Policies & Procedures</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link rounded-5 gliker" id="equipment-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" onclick="displayFAQ(2)">Equipment</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link rounded-5 gliker" id="company-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" onclick="displayFAQ(3)">Company</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 justify-content-center">
+                            <!-- Accordion #1  -  Policies and Procedures Questions -->
+                            <div class="accordion mx-0" style="display: block;" id="faqlist">
+                                <div class="accordion-item">
+                                    <p class="accordion-header h2 gliker" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionOne" aria-expanded="false" aria-controls="questionOne">
+                                            What is your rental duration?
+                                        </button>
+                                    </p>
+                                    <div id="questionOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqlist">
+                                        <div class="accordion-body text-start">
+                                            <p class="mt-2 mb-0">
+                                                There are two types of rentals we provide: <strong>weekday</strong> and <strong>weekend</strong> rentals.<br>
+                                            </p>
+                                            <p class="mt-2 mb-0">    
+                                                In case of a <strong>weekday</strong> booking, we offer our equipment for a period of up to 24 hours without any surcharge. 
+                                            </p>
+                                            <p class="mt-2 mb-0">
+                                                In case you realize you require a longer rental period we can offer every consecutive 24 hours for a discounted rate of 60% of a daily rental cost. <br>
+                                            </p>
+                                            <p class="mt-2 mb-0">
+                                                In case of a <strong>weekend</strong> booking, we provide you with the equipment for the length of both weekends, with a pick up day on Friday, any time from 9 AM to 6 PM, and a return day on Monday, any time from 8 AM to 6 PM. <br>
+                                            </p>
+                                            <p class="mt-2">    
+                                                For <strong>both</strong> types of rentals the price is as specified on the item of your choice.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <p class="accordion-header h2 gliker" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
+                                            Do you provide delivery and set up services?
+                                        </button>
+                                    </p>
+                                    <div id="questionThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqlist">
+                                        <div class="accordion-body text-start">
+                                            <p class="mt-2 mb-0">
+                                                Yes, we are happy to provide you with delivery and setup service for both <strong>weekday</strong> or a <strong>weekend</strong> rentals.<br>
+                                            </p>    
+                                            <p class="mt-2 mb-0">
+                                                If you are located in <strong>Kitchener-Waterloo Region, Cambridge, Guelph, or vicinity</strong> we can provide you with a complimentary delivery service.<br>
+                                            </p>
+                                            <p class="mt-2 mb-0">
+                                                If you are located outside of the specified area, we may be able to deliver your order to you at an additional cost. You can contact us to see if we can make a delivery and to calculate its' cost. <br>
+                                            </p>
+                                            <p class="mt-2">
+                                                Setting up your order may take certain time and thus we may need to charge you a little fee per item to set them up. Please contact us for more information.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <p class="accordion-header h2 gliker" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionFour" aria-expanded="false" aria-controls="questionFour">
+                                            How far in advance should I book equipment for my event?
+                                        </button>
+                                    </p>
+                                    <div id="questionFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqlist">
+                                        <div class="accordion-body text-start">
+                                            <p class="mt-2 mb-0">
+                                                We suggest that you book for your event <strong>as much in advance as you can</strong>, thus you can easily ensure that you will have everything for the event you need. <br>
+                                            </p>
+                                            <p class="mt-2">
+                                                But no worries here, we have got a huge variety of equipment for you to choose from, which we suggest you book <strong>at least one week prior to your event</strong>, 
+                                                so we can properly clean, sanitize, and fully prepare your equipment for you, and be sure we have everything you need in stock.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <p class="accordion-header h2 gliker" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionFive" aria-expanded="false" aria-controls="questionFive">
+                                            Do you offer any discounts or bundles for larger events or big parties?
+                                        </button>
+                                    </p>
+                                    <div id="questionFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqlist">
+                                        <div class="accordion-body text-start">
+                                            <p class="mt-2 mb-0">
+                                                <strong>Certainly!</strong> <br>
+                                                Here, at Happy Party Rentals, we take pride in being a part of your memorable occasions. <br>
+                                            </p>
+                                            <p class="mt-2 mb-0">
+                                                And guess what? We know from experience, that a memorable event doesn't always have to be a massive one. <br>
+                                            </p>
+                                            <p class="mt-2 mb-0">
+                                                So despite the size of your celebraion we want you to save on it, that's why we have created different bundles and packages to suit events of all sizes.<br>
+                                            </p>
+                                            <p class="mt-2 mb-0">
+                                                But here's the exciting part: the larger your event, the greater your savings become! <br>
+                                            </p>
+                                            <p class="mt-2">
+                                                Please refer to the <strong>Packages</strong> tab to learn more!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <p class="accordion-header h2 gliker" id="headingSix">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionSix" aria-expanded="false" aria-controls="questionSix">
+                                            What are your cancelation policies? Are they different for different equipment?
+                                        </button>
+                                    </p>
+                                    <div id="questionSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqlist">
+                                        <div class="accordion-body text-start">
+                                            <p class="mt-2 mb-0">
+                                                Yes, our cancelation policies differ depending on what you are booking with us.<br>
+                                            </p>
+                                            <p class="mt-2 mb-0">
+                                                1. Bouncy Castles. <br>
+                                                    In case of harsh weather conditions, like wind, rain, snow, or cold, we offer a fully refundable cancelation or no-fee rescheduling. 
+                                                    In other cases, partial reimbursement or paid reschedulings are to be reviewed on individual basis. <br>
+                                            </p>
+                                            <p class="mt-2 mb-0">
+                                                2. Bumper Cars, Food Machines, Arcade Games. <br>
+                                                    We may be able to offer fully refundable cancellations if we are notified one week in advance of event.
+                                                    In case of shorter notice, we will be happy to discuss conditions of partial reimbursements or free rescheduling. <br>
+                                            </p>
+                                            <p class="mt-2">
+                                                General Rules: <br>
+                                                We are here to serve you better, so feel free to reach out to us with your questions concerning cancelations or reschedulings. Our customer service team will be happy to assist you with your case and it's specifics.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <p class="accordion-header h2 gliker" id="headingSeven">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionSeven" aria-expanded="false" aria-controls="questionSeven">
+                                            Can I make any changes to my rental order after booking? Are there any additional fees?
+                                        </button>
+                                    </p>
+                                    <div id="questionSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqlist">
+                                        <div class="accordion-body text-start">
+                                            <p class="mt-2 mb-0">
+                                                We are here to help you make your dreams come true.<br>
+                                            </p>
+                                            <p class="mt-2 mb-0">
+                                                If you have any seconds thoughts, doubts or any concerns before or after you book please feel free to reach out to us using our Contact Us form and we will do our best to answer your questions and accomodate your changes.<br>
+                                            </p>
+                                            <p class="mt-2">
+                                                And do not worry, we are happy to accomodate timely changes to your order absolutely free of charge.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer id="footer">
         <div class="container">
             <div class="row align-items-center py-2">
@@ -225,6 +403,10 @@
 
                     <a class="socials mx-2" href="https://facebook.com">
                         <img src="images/facebook.png" alt="Our Facebook" style="width: 40px; height: 40px;" class="img-fluid ms-auto mw-25 mw-sm-50 mw-md-75 mw-lg-100">
+                    </a>
+
+                    <a class="socials mx-2" href="https://yelp.com">
+                        <img src="images/yelp.png" alt="Our Yelp Page" style="width: 40px; height: 40px;" class="img-fluid ms-auto mw-25 mw-sm-50 mw-md-75 mw-lg-100">
                     </a>
                 </div>
             </div>

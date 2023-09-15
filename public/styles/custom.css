@@ -184,6 +184,29 @@ header {
     box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
 }
 
+/*Modifying the FAQ sections now*/
+#faq .container-fluid {
+    background-color: #fff;
+}
+#faq #pillNav2 {
+    --bs-nav-link-color: #ce76c2; 
+    --bs-nav-pills-link-active-color: #fff; 
+    --bs-nav-pills-link-active-bg: #ce76c2; 
+    --bs-nav-link-hover-color: #000;
+}
+#faq .accordion {
+    --bs-accordion-btn-color: #ce76c2;
+	--bs-accordion-btn-bg: #fff;
+	--bs-accordion-active-color: #fff;
+	--bs-accordion-active-bg: #ce76c2;
+
+    --bs-accordion-btn-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ce76c2'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");;
+}
+#faq .accordion-item {
+    border-color: #ce76c2;
+}
+
 /*Working with the footer here*/
 #footer {
     background-color: #f3e1d5;
