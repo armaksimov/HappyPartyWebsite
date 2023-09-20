@@ -207,6 +207,14 @@ header {
     border-color: #ce76c2;
 }
 
+#quote .btn-happy {
+    --bs-btn-bg: #ce76c2;
+    --bs-btn-color: #fff;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-color: #ce76c2;
+    --bs-btn-hover-border-color: #ce76c2;
+}
+
 /*Working with the footer here*/
 #footer {
     background-color: #f3e1d5;
